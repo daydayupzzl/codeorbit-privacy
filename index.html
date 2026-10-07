@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orbit Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --text: #1d1d1f; --sub: #6e6e73; --line: #e5e5ea; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1c1c1e; --text: #f5f5f7; --sub: #98989d; --line: #38383a; } }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 -apple-system, "Segoe UI Variable", "Segoe UI", "Microsoft YaHei UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 32px; margin: 0 0 4px; } h2 { font-size: 20px; margin: 36px 0 8px; }
+  p, li { color: var(--text); } .muted { color: var(--sub); } hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0; }
+  code { font-size: 14px; background: color-mix(in srgb, var(--line) 60%, transparent); padding: 1px 5px; border-radius: 5px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Orbit Privacy Policy</h1>
+<p class="muted">Effective date: October 7, 2026 · Applies to Orbit version 2026.10.07 and later</p>
+
+<p>Orbit is a desktop widget that shows your Codex (and, optionally, Claude Code) usage limits and local usage
+statistics. Orbit is an independent, unofficial app and is not affiliated with or endorsed by OpenAI or Anthropic.</p>
+
+<h2>Information Orbit reads on your computer</h2>
+<ul>
+  <li><strong>Sign-in information of Codex</strong> stored by the Codex app on your computer
+    (<code>%USERPROFILE%\.codex\auth.json</code>): an access token, your account ID and the email address of your
+    account.</li>
+  <li><strong>Sign-in information of Claude Code</strong>, only if Claude Code is installed
+    (<code>%USERPROFILE%\.claude\.credentials.json</code> and <code>%USERPROFILE%\.claude.json</code>): an access token,
+    your plan type and email address.</li>
+  <li><strong>Local session logs</strong> of Codex and Claude Code (<code>%USERPROFILE%\.codex\sessions</code>,
+    <code>%USERPROFILE%\.claude\projects</code>), from which Orbit counts the number of tokens used per day. Orbit
+    only reads token counts and timestamps; it does not store the content of your conversations.</li>
+</ul>
+
+<h2>Information Orbit sends over the network</h2>
+<p>To display your current usage limits, Orbit sends your access token directly to the service that issued it:</p>
+<ul>
+  <li>Codex: <code>https://chatgpt.com</code> (OpenAI)</li>
+  <li>Claude Code: <code>https://api.anthropic.com</code> (Anthropic) — only when you turn on “Show Claude Code”.</li>
+</ul>
+<p>These requests happen when Orbit starts, when you refresh manually, or at the auto-refresh interval you choose
+(off by default). The same request is made by Codex and Claude Code themselves to show your limits. Orbit does not
+send your data to the developer of Orbit or to any other party, and contains no analytics, advertising or tracking.</p>
+
+<h2>Information Orbit stores</h2>
+<p>Orbit stores your preferences (language, theme, window position and so on) and a statistics cache (daily token
+counts) in your user profile on this computer. You can delete the cache at any time in Settings → Cache → Clear.
+Uninstalling Orbit removes the app; the uninstaller can also remove your preferences and cache.</p>
+
+<h2>Children</h2>
+<p>Orbit is a developer tool and is not directed at children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be published at this address with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <strong>2697572005@qq.com</strong></p>
+
+<hr>
+
+<h1>Orbit 隐私政策</h1>
+<p class="muted">生效日期：2026 年 10 月 7 日 · 适用于 Orbit 2026.10.07 及之后的版本</p>
+
+<p>Orbit 是一个桌面小组件，用于显示 Codex（以及可选的 Claude Code）的使用额度和本机使用统计。Orbit 是独立的非官方应用，
+与 OpenAI、Anthropic 没有任何关联，也未获其认可。</p>
+
+<h2>Orbit 在你的电脑上读取的信息</h2>
+<ul>
+  <li><strong>Codex 的登录信息</strong>（由 Codex 保存在 <code>%USERPROFILE%\.codex\auth.json</code>）：访问令牌、账号 ID 和账号邮箱。</li>
+  <li><strong>Claude Code 的登录信息</strong>（仅在安装了 Claude Code 时；<code>%USERPROFILE%\.claude\.credentials.json</code>
+    与 <code>%USERPROFILE%\.claude.json</code>）：访问令牌、套餐类型和账号邮箱。</li>
+  <li><strong>本机会话日志</strong>（<code>%USERPROFILE%\.codex\sessions</code>、<code>%USERPROFILE%\.claude\projects</code>）：
+    Orbit 只从中统计每天使用的 token 数量和时间，不保存任何对话内容。</li>
+</ul>
+
+<h2>Orbit 通过网络发送的信息</h2>
+<p>为了显示当前额度，Orbit 会把访问令牌直接发送给签发它的服务：Codex 发往 <code>https://chatgpt.com</code>（OpenAI）；
+Claude Code 发往 <code>https://api.anthropic.com</code>（Anthropic），且仅在你打开"显示 Claude Code"时发送。
+这些请求只在启动、手动刷新或你设置的自动刷新间隔（默认关闭）时发生，与 Codex、Claude Code 自己查询额度的请求相同。
+Orbit 不会把你的数据发送给 Orbit 开发者或任何第三方，也不包含任何统计分析、广告或跟踪。</p>
+
+<h2>Orbit 保存的信息</h2>
+<p>Orbit 会在本机的用户目录中保存你的偏好设置（语言、主题、窗口位置等）和统计缓存（每天的 token 数量）。
+你可以随时在 设置 → 缓存 → 清理 中删除缓存；卸载 Orbit 会移除程序，卸载时也可以选择同时删除偏好设置与缓存。</p>
+
+<h2>联系方式</h2>
+<p>关于本政策的问题请联系：<strong>2697572005@qq.com</strong></p>
+</main>
+</body>
+</html>
